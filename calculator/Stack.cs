@@ -27,8 +27,6 @@
             }
             _pointer--;
             var value = _array[_pointer];
-            _array[_pointer] = default; 
-            
             return value;
         }
         

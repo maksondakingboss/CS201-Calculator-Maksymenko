@@ -1,29 +1,27 @@
 ﻿using System;
-using System.Globalization;
 
 namespace calculator
 {
     public class Polska
     {
-        public static double Evaluate(string[] rpnTokens)
+        public static int Evaluate(string[] rpnTokens)
         {
-            Stack<double> stack = new Stack<double>();
+            Stack<int> stack = new Stack<int>();
 
             for (int i = 0; i < rpnTokens.Length; i++)
             {
                 string token = rpnTokens[i];
 
-               
-                if (double.TryParse(token, NumberStyles.Any, CultureInfo.InvariantCulture, out double number))
+                if (int.TryParse(token, out int number))
                 {
                     stack.Push(number); 
                 }
                 else
                 {
-                    double b = stack.Pop();
-                    double a = stack.Pop();
+                    int b = stack.Pop();
+                    int a = stack.Pop();
 
-                    double result = 0;
+                    int result = 0;
 
                     switch (token)
                     {
@@ -44,7 +42,7 @@ namespace calculator
                             result = a / b;
                             break;
                         case "^":
-                            result = Math.Pow(a, b); 
+                            result = (int)Math.Pow(a, b); 
                             break;
                         default:
                             throw new InvalidOperationException($"unknown opp: {token}");
@@ -54,7 +52,7 @@ namespace calculator
                 }
             }
 
-            double finalResult = stack.Pop();
+            int finalResult = stack.Pop();
             
             if (!stack.IsEmpty())
             {
