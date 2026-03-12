@@ -4,9 +4,9 @@ namespace calculator
 {
     public class ShuntingYardAlg
     {
-        private static int GetPriority(string op)
+        private static int GetPriority(string oper)
         {
-            switch (op)
+            switch (oper)
             {
                 case "^":
                     return 3;
