@@ -33,9 +33,8 @@ namespace calculator
         
         public static string[] ConvertToRPN(string[] tokens)
         {
-            Stack<string> stack = new Stack<string>();
-            
-            Queue<string> outputQueue = new Queue<string>();
+            calculator.CustomStack<string> stack = new calculator.CustomStack<string>();
+            calculator.CustomQueue<string> outputQueue = new calculator.CustomQueue<string>();
 
             for (int i = 0; i < tokens.Length; i++)
             {

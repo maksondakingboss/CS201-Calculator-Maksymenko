@@ -16,6 +16,7 @@ try
     string[] tokens = Tokenz.GetTokens(inputExpression);
     
     string[] polyaki = ShuntingYardAlg.ConvertToRPN(tokens);
+    Console.WriteLine($"RPN: {string.Join(" ", polyaki)}");
     
     double result = Polska.Evaluate(polyaki);
 

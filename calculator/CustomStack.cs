@@ -2,7 +2,7 @@
 {
     using System;
     
-    public class Stack<T>
+    public class CustomStack<T>
     {
         private const int Capacity = 50;
         private T[] _array = new T[Capacity];

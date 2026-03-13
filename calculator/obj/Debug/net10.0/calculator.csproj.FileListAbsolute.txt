@@ -12,3 +12,4 @@ C:\Users\Max\RiderProjects\calculator\calculator\obj\Debug\net10.0\refint\calcul
 C:\Users\Max\RiderProjects\calculator\calculator\obj\Debug\net10.0\calculator.pdb
 C:\Users\Max\RiderProjects\calculator\calculator\obj\Debug\net10.0\calculator.genruntimeconfig.cache
 C:\Users\Max\RiderProjects\calculator\calculator\obj\Debug\net10.0\ref\calculator.dll
+C:\Users\Max\RiderProjects\calculator\calculator\obj\Debug\net10.0\calculator.sourcelink.json

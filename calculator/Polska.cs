@@ -6,7 +6,7 @@ namespace calculator
     {
         public static int Evaluate(string[] rpnTokens)
         {
-            Stack<int> stack = new Stack<int>();
+            CustomStack<int> stack = new CustomStack<int>();
 
             for (int i = 0; i < rpnTokens.Length; i++)
             {

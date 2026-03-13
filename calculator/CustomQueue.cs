@@ -2,7 +2,7 @@
 {
     using System;
 
-    public class Queue<T>
+    public class CustomQueue<T>
     {
         private T[] _array = new T[50];
         private int _pointer = 0;
@@ -51,6 +51,15 @@
         public int Count()
         {
             return _pointer;
+        }
+        public T[] ToArray()
+        {
+            T[] result = new T[_pointer];
+            for (int i = 0; i < _pointer; i++)
+            {
+                result[i] = _array[i];
+            }
+            return result;
         }
     }
 }
