@@ -44,6 +44,9 @@ namespace calculator
                         case "^":
                             result = (int)Math.Pow(a, b); 
                             break;
+                        case "@": 
+                            result = Math.Max(a, b); 
+                            break;
                         default:
                             throw new InvalidOperationException($"unknown opp: {token}");
                     }

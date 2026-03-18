@@ -9,6 +9,8 @@ namespace calculator
             switch (oper)
             {
                 case "^":
+                case "@":
+                    return 3;
                     return 3;
                 case "*":
                 case "/":
@@ -28,7 +30,7 @@ namespace calculator
 
         private static bool IsOperator(string token)
         {
-            return token == "+" || token == "-" || token == "*" || token == "/" || token == "^";
+            return token == "+" || token == "-" || token == "*" || token == "/" || token == "^" || token == "@";
         }
         
         public static string[] ConvertToRPN(string[] tokens)

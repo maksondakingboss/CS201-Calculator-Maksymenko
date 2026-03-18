@@ -37,7 +37,7 @@ public class Tokenz
                     numberBuffer = "";    
                 }
             }
-            else if ("+-*/^()".Contains(c))
+            else if ("+-*/^()@".Contains(c))
             {
                 if (numberBuffer != "")
                 {
